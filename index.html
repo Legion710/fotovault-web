@@ -128,7 +128,11 @@
 
     @media (max-width:860px){
       .navlinks{display:none} .navtoggle{display:inline-flex}
-      .navcta .btn-ghost{display:none}
+      /* keep Sign in visible in the header; the trial CTA is huge in the hero right below */
+      .navcta .btn-gold{display:none}
+      /* buttons were oversized on phones */
+      .btn{font-size:14px;padding:10px 16px}
+      .hero .cta .btn{font-size:14.5px;padding:11px 18px}
       .hero-grid{grid-template-columns:1fr;gap:32px} .hero-img{order:-1}
       .trust-grid{grid-template-columns:repeat(2,1fr);gap:22px}
       .cards-3,.steps,.price-grid,.sa-grid{grid-template-columns:1fr}
