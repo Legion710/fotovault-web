@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fotovault">
+  <!-- Brand mark: the gold diamond used in the sidebar wordmark, on the app's
+       near-black. Vector so it stays crisp at every size a browser asks for. -->
+  <rect width="64" height="64" rx="14" fill="#0c0c0e"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#e0a458" stroke-opacity="0.4" stroke-width="3"/>
+  <path d="M32 15 L47 32 L32 49 L17 32 Z" fill="#e0a458"/>
+  <path d="M32 24 L39.5 32 L32 40 L24.5 32 Z" fill="#0c0c0e"/>
+</svg>
