@@ -7,9 +7,6 @@
   <meta name="description" content="How Fotovault collects, uses, and protects personal information, in line with South Africa's POPIA." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" href="favicon.ico" sizes="32x32">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script>(function(){try{var t=localStorage.getItem("fv-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
   <style>
     :root{
@@ -63,6 +60,19 @@
   <!-- Analytics: self-hosted Umami on our own domain. No cookies, no cross-site
        tracking, no third-party ad networks. data-exclude-search keeps query
        strings out of the stats. -->
+
+<style>
+/* Brand faces are swapped for a system stack here. The brand faces (Fraunces / Inter)
+   are loaded from Google Fonts on the live site; here they are mapped to the
+   same system stack the rest of the site uses, so the page has no
+   external requests at all. Legal wording is untouched. */
+:root { --sys: ui-sans-serif, -apple-system, "SF Pro Text", "Segoe UI", Inter, system-ui, sans-serif; }
+body, body * { font-family: var(--sys) !important; }
+h1, h2, h3 { letter-spacing: -0.02em; }
+</style>
+  <!-- Analytics: self-hosted Umami on our own domain. No cookies, no cross-site
+       tracking, no third-party ad networks. data-exclude-search keeps query
+       strings out of the stats. -->
   <script defer src="https://stats.fotovault.co.za/script.js"
           data-website-id="1d61428d-81ed-4c97-a0c5-ed84a23d9219"
           data-exclude-search="true"></script>
@@ -70,8 +80,8 @@
 <body>
   <header>
     <div class="wrap bar">
-      <a class="logo" href="/"><span class="mark">◆</span>Foto<span class="gold">vault</span></a>
-      <a class="back" href="/">← Back to home</a>
+      <a class="logo" href="./"><span class="mark">◆</span>Foto<span class="gold">vault</span></a>
+      <a class="back" href="./">← Back to home</a>
     </div>
   </header>
 
@@ -217,7 +227,7 @@
   <footer>
     <div class="wrap foot-row">
       <div>© <span id="yr">2026</span> Fotovault · Built, hosted &amp; managed in South Africa 🇿🇦</div>
-      <div><a href="/">Home</a> · <a href="terms.html">Terms</a> · <a href="https://portal.fotovault.co.za/signup.html">Start free trial</a></div>
+      <div><a href="./">Home</a> · <a href="terms.html">Terms</a> · <a href="https://portal.fotovault.co.za/signup.html">Start free trial</a></div>
     </div>
   </footer>
   <script>try{document.getElementById("yr").textContent=new Date().getFullYear();}catch(e){}</script>
