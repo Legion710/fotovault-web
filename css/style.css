@@ -257,7 +257,6 @@ a { color: inherit; text-decoration: none; }
   transition: transform 0.25s ease, background 0.25s ease;
 }
 .btn:hover { transform: translateY(-2px); background: var(--accent-hi); }
-.btn-sm { padding: 9px 17px; font-size: 13px; }
 .btn-ghost {
   background: transparent;
   color: var(--ink);
@@ -653,32 +652,6 @@ p { color: var(--muted); }
   line-height: 1.6;
 }
 
-/* ---------- scroll cue ---------- */
-
-.scroll-cue {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 11px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.scroll-cue span {
-  width: 1px;
-  height: 32px;
-  background: linear-gradient(180deg, var(--scrim-0), var(--accent));
-  animation: drop 2s ease-in-out infinite;
-}
-@keyframes drop {
-  0%, 100% { opacity: 0.2; transform: scaleY(0.5); transform-origin: top; }
-  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-}
-
 /* ---------- footer ---------- */
 
 footer {
@@ -751,7 +724,7 @@ footer {
   .nav nav { display: none; }
   .themebtn { margin-left: auto; }
   .signin { font-size: 13px; }
-  .nav .btn-sm { padding: 9px 13px; font-size: 12px; white-space: nowrap; }
+  .hero-badge { display: none; }
 
   .panel { padding-left: 24px; padding-right: 24px; }
   .panel.right { justify-content: flex-start; }
@@ -774,7 +747,6 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .scroll-cue span { animation: none; }
 }
 
 /* ---------- wide-copy side panel ---------- */
