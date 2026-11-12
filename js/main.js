@@ -19,8 +19,8 @@ const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  * ------------------------------------------------------------------ */
 
 const THEMES = {
-  dark:  { bg: 0x0f0e0c, accent: 0xe0a458, border: 0xf7f5f0, back: 0x161412 },
-  light: { bg: 0xfaf8f4, accent: 0xa8701a, border: 0xffffff, back: 0xe8e3da },
+  dark:  { bg: 0x1e1a17, accent: 0xd47f60, border: 0xf2ebe1, back: 0x29241f },
+  light: { bg: 0xf4eee6, accent: 0xb9654a, border: 0xfbf8f3, back: 0xeae2d7 },
 };
 
 const lightMQ = window.matchMedia('(prefers-color-scheme: light)');

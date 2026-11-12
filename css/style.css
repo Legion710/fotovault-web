@@ -764,3 +764,43 @@ footer {
     background: linear-gradient(180deg, var(--scrim-1) 0%, var(--scrim-2) 48%, var(--scrim-0) 82%);
   }
 }
+
+
+/* Atelier faces, self-hosted (OFL; Latin subset, woff2) so the site makes no font requests to Google */
+@font-face{font-family:Italiana;src:url(../assets/fonts/Italiana.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Jost;src:url(../assets/fonts/Jost.woff2) format("woff2");font-weight:300 700;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(../assets/fonts/CormorantGaramond.woff2) format("woff2");font-weight:300 700;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(../assets/fonts/CormorantGaramond-Italic.woff2) format("woff2");font-weight:300 700;font-style:italic;font-display:swap}
+/* ================================================================== *
+   ATELIER (2026-11-12): the portal's new look on the public site.
+   Cream + terracotta + sage by day, espresso at night; Italiana wordmark,
+   Cormorant Garamond headings, Jost body.
+ * ================================================================== */
+:root {
+  --bg: #1e1a17; --ink: #f2ebe1; --muted: #b2a597; --line: rgba(242, 235, 225, 0.14);
+  --accent: #d47f60; --accent-deep: #b9654a; --accent-hi: #e0957a; --btn-ink: #1e1a17;
+  --glass-bg: rgba(30, 26, 23, 0.78); --card-bg: rgba(242, 235, 225, 0.05);
+  --featured-bg: rgba(212, 127, 96, 0.10); --featured-line: rgba(212, 127, 96, 0.55); --hover-line: rgba(212, 127, 96, 0.5);
+  --nav-bg: rgba(30, 26, 23, 0.86); --footer-bg: rgba(30, 26, 23, 0.82);
+  --scrim-1: rgba(30, 26, 23, 0.96); --scrim-2: rgba(30, 26, 23, 0.86); --scrim-0: rgba(30, 26, 23, 0);
+  --glass-1: rgba(30, 26, 23, 0.97); --glass-2: rgba(30, 26, 23, 0.90); --glass-0: rgba(30, 26, 23, 0);
+  --sage: #9eaa85;
+}
+:root[data-theme="light"] {
+  --bg: #f4eee6; --ink: #2b241f; --muted: #7a6c61; --line: rgba(43, 36, 31, 0.13);
+  --accent: #b9654a; --accent-deep: #9c5038; --accent-hi: #c97a5f; --btn-ink: #fbf8f3;
+  --glass-bg: rgba(251, 248, 243, 0.86); --card-bg: rgba(251, 248, 243, 0.92); --card-shadow: 0 10px 30px rgba(120, 92, 66, 0.10);
+  --featured-bg: rgba(185, 101, 74, 0.08); --featured-line: rgba(185, 101, 74, 0.45); --hover-line: rgba(185, 101, 74, 0.45);
+  --nav-bg: rgba(244, 238, 230, 0.88); --footer-bg: rgba(238, 231, 221, 0.92);
+  --scrim-1: rgba(244, 238, 230, 0.96); --scrim-2: rgba(244, 238, 230, 0.86); --scrim-0: rgba(244, 238, 230, 0);
+  --glass-1: rgba(244, 238, 230, 0.97); --glass-2: rgba(244, 238, 230, 0.90); --glass-0: rgba(244, 238, 230, 0);
+  --sage: #7a8767;
+}
+body { font-family: Jost, "Century Gothic", system-ui, sans-serif; }
+h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif !important; font-weight: 500 !important; letter-spacing: -0.01em !important; }
+h1 em, h2 em { font-style: italic !important; color: var(--sage) !important; }
+.brand { font-family: Italiana, serif !important; font-weight: 400 !important; letter-spacing: .32em !important; text-transform: uppercase; font-size: 19px !important; }
+.brand .mark { display: none !important; }
+.brand::after { content: "Client gallery portal"; display: block; font-family: Jost, sans-serif; font-size: 8.5px; letter-spacing: .38em; margin-top: 4px; color: var(--muted); }
+.btn, button { border-radius: 8px; }
+.brand { flex-direction: column !important; align-items: flex-start !important; gap: 0 !important; line-height: 1 !important; }

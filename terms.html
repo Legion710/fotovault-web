@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms &amp; Conditions — Fotovault</title>
   <meta name="description" content="The terms governing your use of Fotovault — photo delivery for South African photographers." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" href="favicon.ico" sizes="32x32">
-  <script>(function(){try{var t=localStorage.getItem("fv-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+  <script>(function(){var t="light";try{if(localStorage.getItem("fv-theme")==="dark")t="dark";}catch(e){}document.documentElement.setAttribute("data-theme",t);})();</script>
   <style>
     :root{
       --ink:#0c0c0e; --ink2:#15151a; --ink3:#1d1d24; --line:rgba(255,255,255,.09);
@@ -73,11 +73,37 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   <script defer src="https://stats.fotovault.co.za/script.js"
           data-website-id="1d61428d-81ed-4c97-a0c5-ed84a23d9219"
           data-exclude-search="true"></script>
+  <style>
+    /* Atelier (2026-11-12): cream + terracotta + sage by day, espresso at night,
+       to match the portal and fotovault.co.za. */
+    @font-face{font-family:Italiana;src:url(assets/fonts/Italiana.woff2) format("woff2");font-display:swap}
+    @font-face{font-family:Jost;src:url(assets/fonts/Jost.woff2) format("woff2");font-weight:300 700;font-display:swap}
+    @font-face{font-family:"Cormorant Garamond";src:url(assets/fonts/CormorantGaramond.woff2) format("woff2");font-weight:300 700;font-display:swap}
+    @font-face{font-family:"Cormorant Garamond";src:url(assets/fonts/CormorantGaramond-Italic.woff2) format("woff2");font-weight:300 700;font-style:italic;font-display:swap}
+    /* our own font files, so the legal pages still make no outside requests */
+    body, body *{ font-family:Jost,"Century Gothic",system-ui,sans-serif !important; }
+    h1, .doc h2{ font-family:"Cormorant Garamond",Georgia,serif !important; }
+    .logo, .logo *:not(small){ font-family:Italiana,serif !important; }
+    .logo small{ font-family:Jost,sans-serif !important; }
+    :root{ --ink:#1e1a17; --ink2:#29241f; --ink3:#37302b; --line:rgba(242,235,225,.13);
+      --gold:#d47f60; --golddk:#b9654a; --mist:#b2a597; --white:#f2ebe1; --sage:#9eaa85; color-scheme:dark; }
+    :root[data-theme="light"]{ --ink:#f4eee6; --ink2:#fbf8f3; --ink3:#eae2d7; --line:rgba(43,36,31,.12);
+      --gold:#b9654a; --golddk:#9c5038; --mist:#7a6c61; --white:#2b241f; --sage:#7a8767; color-scheme:light; }
+    body{ font-family:Jost,"Century Gothic",system-ui,sans-serif; }
+    h1,.doc h2{ font-family:"Cormorant Garamond",Georgia,serif; font-weight:500; letter-spacing:-.005em; }
+    h1{ font-size:clamp(36px,6vw,54px); }
+    .doc h2{ font-size:27px; }
+    .eyebrow{ letter-spacing:.3em; font-weight:500; }
+    .logo{ font-family:Italiana,serif; font-weight:400; text-transform:uppercase; letter-spacing:.32em; font-size:19px;
+      flex-direction:column; align-items:flex-start; gap:0; line-height:1; }
+    .logo small{ display:block; margin-top:5px; font-family:Jost,sans-serif; font-size:8.5px; letter-spacing:.38em; color:var(--mist); }
+    .callout{ border-left-color:var(--sage); }
+  </style>
 </head>
 <body>
   <header>
     <div class="wrap bar">
-      <a class="logo" href="./"><span class="mark">◆</span>Foto<span class="gold">vault</span></a>
+      <a class="logo" href="./">Fotovault<small>Client gallery portal</small></a>
       <a class="back" href="./">← Back to home</a>
     </div>
   </header>
